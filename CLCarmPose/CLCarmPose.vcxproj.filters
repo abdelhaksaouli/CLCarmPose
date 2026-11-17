@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\mainApp.cpp" />
+    <ClCompile Include="src\clKernelManger.cpp" />
+    <ClCompile Include="src\clParallelHashArray.cpp" />
+    <ClCompile Include="src\gpuppfstimator.cpp" />
+    <ClCompile Include="src\scene.cpp" />
+    <ClCompile Include="src\model.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\PCLoader.h" />
+    <ClInclude Include="include\PCTools.h" />
+    <ClInclude Include="include\defines.h" />
+    <ClInclude Include="include\timer.h" />
+    <ClInclude Include="include\clContextManger.h" />
+    <ClInclude Include="include\clKernelManger.h" />
+    <ClInclude Include="include\histogram.h" />
+    <ClInclude Include="include\clParallelHashArray.h" />
+    <ClInclude Include="include\gpuppfstimator.h" />
+    <ClInclude Include="include\clutil.h" />
+    <ClInclude Include="include\scene.h" />
+    <ClInclude Include="include\model.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="kernels\mat2transquat_kernel.cl" />
+    <None Include="kernels\ppf_hash_kernel.cl" />
+    <None Include="kernels\ppf_kernel.cl" />
+    <None Include="kernels\ppf_vote_count_kernel.cl" />
+    <None Include="kernels\ppf_vote_kernel.cl" />
+    <None Include="kernels\rot_clustering_kernel.cl" />
+    <None Include="kernels\trans_calc_kernel.cl" />
+    <None Include="kernels\trans2idx_kernel.cl" />
+    <None Include="kernels\vec_lower_bound.cl" />
+    <None Include="kernels\vote_weight_kernel.cl" />
+    <None Include="WebUI\index.html" />
+    <None Include="WebUI\index.js" />
+    <None Include="WebUI\package.json" />
+    <None Include="WebUI\public\main.js" />
+    <None Include="data\scenes\00000.pcd" />
+    <None Include="data\scenes\no_noise_no_occlusion_0_0.pcd" />
+    <None Include="data\scenes\no_noise_no_occlusion_0_15.pcd" />
+    <None Include="data\scenes\no_noise_no_occlusion_0_30.pcd" />
+    <None Include="data\scenes\no_noise_no_occlusion_0_45.pcd" />
+    <None Include="data\scenes\no_noise_no_occlusion_15_0.pcd" />
+    <None Include="data\scenes\no_noise_no_occlusion_15_15.pcd" />
+    <None Include="data\scenes\no_noise_no_occlusion_30_0.pcd" />
+    <None Include="data\scenes\no_noise_no_occlusion_30_30.pcd" />
+    <None Include="data\scenes\no_noise_no_occlusion_45_0.pcd" />
+    <None Include="data\scenes\no_noise_no_occlusion_45_45.pcd" />
+    <None Include="data\scenes\no_noise_occlusion_0_0.pcd" />
+    <None Include="data\scenes\no_noise_occlusion_0_15.pcd" />
+    <None Include="data\scenes\no_noise_occlusion_0_30.pcd" />
+    <None Include="data\scenes\no_noise_occlusion_0_45.pcd" />
+    <None Include="data\scenes\no_noise_occlusion_15_0.pcd" />
+    <None Include="data\scenes\no_noise_occlusion_15_15.pcd" />
+    <None Include="data\scenes\no_noise_occlusion_30_0.pcd" />
+    <None Include="data\scenes\no_noise_occlusion_30_30.pcd" />
+    <None Include="data\scenes\no_noise_occlusion_45_0.pcd" />
+    <None Include="data\scenes\no_noise_occlusion_45_45.pcd" />
+    <None Include="data\scenes\noise_no_occlusion_0_0.pcd" />
+    <None Include="data\scenes\noise_no_occlusion_0_15.pcd" />
+    <None Include="data\scenes\noise_no_occlusion_0_30.pcd" />
+    <None Include="data\scenes\noise_no_occlusion_0_45.pcd" />
+    <None Include="data\scenes\noise_no_occlusion_15_0.pcd" />
+    <None Include="data\scenes\noise_no_occlusion_15_15.pcd" />
+    <None Include="data\scenes\noise_no_occlusion_30_0.pcd" />
+    <None Include="data\scenes\noise_no_occlusion_30_30.pcd" />
+    <None Include="data\scenes\noise_no_occlusion_45_0.pcd" />
+    <None Include="data\scenes\noise_no_occlusion_45_45.pcd" />
+    <None Include="data\scenes\noise_occlusion_0_0.pcd" />
+    <None Include="data\scenes\noise_occlusion_0_15.pcd" />
+    <None Include="data\scenes\noise_occlusion_0_30.pcd" />
+    <None Include="data\scenes\noise_occlusion_0_45.pcd" />
+    <None Include="data\scenes\noise_occlusion_15_0.pcd" />
+    <None Include="data\scenes\noise_occlusion_15_15.pcd" />
+    <None Include="data\scenes\noise_occlusion_30_0.pcd" />
+    <None Include="data\scenes\noise_occlusion_30_30.pcd" />
+    <None Include="data\scenes\noise_occlusion_45_0.pcd" />
+    <None Include="data\scenes\noise_occlusion_45_45.pcd" />
+    <None Include="data\scenes\RGBD_0000.pcd" />
+    <None Include="data\scenes\RGBD_0014.pcd" />
+    <None Include="data\model\carm.pcd" />
+    <None Include="data\model\carm.stl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="data\estimate.txt" />
+    <Text Include="data\pose.txt" />
+  </ItemGroup>
+</Project>

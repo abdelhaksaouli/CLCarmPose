@@ -1,0 +1,6 @@
+data/model/carm.pcd
+data/scenes/no_noise_no_occlusion_0_0.pcd
+1
+0.04
+10
+-0.7178408273831751 0.2179780169322072 -3.206992149020006
